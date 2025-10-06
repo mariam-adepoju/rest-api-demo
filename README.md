@@ -1,4 +1,4 @@
-# 🧑‍💻 ReqRes Dashboard
+# 🧑‍💻 Rest APIs
 
 A simple **frontend CRUD dashboard** that interacts with the [ReqRes API](https://reqres.in/) to simulate user management operations — including **login**, **fetching users**, **creating**, **editing**, and **deleting** users.  
 
@@ -31,7 +31,7 @@ Stores login status in `localStorage` for smooth navigation.
 - **ReqRes Public API**
 - **Rest API**
 
----
-
-## 📸 Demo Preview
+## Login using test credentials
+- **Email: `eve.holt@reqres.in`** 
+- **Password: `cityslicka`**
 
