@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rest-APIs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white shadow-2xl rounded-2xl w-full max-w-2xl p-8">
+      <h1 class="text-2xl font-bold text-center mb-6 text-gray-800">
+        REST API Demo
+      </h1>
+      <!-- AUTH SECTION -->
+      <div id="authSection" class="mb-10">
+        <form id="loginForm" class="space-y-4">
+          <h2 class="text-lg font-semibold">Login</h2>
+          <input
+            id="loginEmail"
+            type="email"
+            placeholder="Email"
+            class="w-full border rounded-lg px-3 py-2"
+            required
+          />
+          <input
+            id="loginPassword"
+            type="password"
+            placeholder="Password"
+            class="w-full border rounded-lg px-3 py-2"
+            required
+          />
+          <button
+            type="submit"
+            class="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700"
+          >
+            Login
+          </button>
+        </form>
+      </div>
+      <!-- DASHBOARD SECTION -->
+      <div id="dashboard" class="hidden">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-lg font-semibold">User Dashboard</h2>
+          <button
+            id="fetchUsersBtn"
+            class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700"
+          >
+            Load Users
+          </button>
+        </div>
+        <!-- CREATE NEW USER FORM -->
+        <form id="createUserForm" class="mb-6 bg-gray-50 p-4 rounded-lg">
+          <h3 class="font-semibold mb-2">Create New User</h3>
+          <div class="flex flex-col gap-2">
+            <input
+              id="newUserName"
+              type="text"
+              placeholder="Name"
+              class="border px-3 py-2 rounded-lg"
+              required
+            />
+            <input
+              id="newUserJob"
+              type="text"
+              placeholder="Job"
+              class="border px-3 py-2 rounded-lg"
+              required
+            />
+          </div>
+          <button
+            type="submit"
+            class="mt-3 bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700"
+          >
+            Add User
+          </button>
+        </form>
+        <div id="usersList" class="space-y-3"></div>
+      </div>
+      <p
+        id="responseMsg"
+        class="mt-6 text-center text-gray-700 font-medium"
+      ></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
